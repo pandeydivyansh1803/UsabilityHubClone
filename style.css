@@ -1,0 +1,463 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    color: var(--primary-text-color);
+    
+}
+h1{
+    font-size: 2.8rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+h5{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+li{
+    font-size: 0.9rem;
+    font-weight:lighter;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.hover-links{
+   color: var(--primary-text-color) ;
+   transition: 0.2s ease-out;
+}
+.nav-toggle{
+    display: none;
+}
+.hover-links:hover{
+    color:var(--accent-color);
+
+}
+
+.small-bold-text{
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+.container{
+    max-width: 1180px;
+    margin: auto;
+    padding-inline:var(--padding-inline-section);
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+.primary-button{
+    width: 100px;
+    height: 45px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+.primary-button>.hover-links{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.secondary-button{
+    width: 100px;
+    height: 45px;
+    padding: 3px 8px;
+    border: 0.8px solid #b9cde4;
+    border-radius: 6px;
+    background-color:transparent;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    box-shadow: 2px 2px wheat;
+}
+.secondary-button>.hover-links{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+
+/* for top banner */
+.top-banner{
+    background-color: #e74694;
+    background-image: url(./asset\ 32.png);
+    background-size: 300px;
+}
+.banner-text{
+    color: white;
+    padding: 15px  30px;
+    text-align: center;
+}
+.banner-text:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* for main nav bar */
+.main-nav{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.company-logo>img{
+    width: 200px;
+}
+.nav-links{
+    flex-basis: 550px;
+}
+.nav-links ul{
+    justify-content: space-between;
+
+}
+
+
+
+
+/* for header */
+header{
+    margin-top: 70px;
+    /* border: 2px solid blue; */
+    
+}
+.header-left{
+    flex-basis: 470px;
+    /* border: 2px solid red; */
+}
+#header-img{
+    width: 600px;
+    height: 450px;
+}
+#header-para{
+    margin-top: 18px;
+    margin-bottom: 35px;
+}
+.header-left .primary-button{
+    width: 140px;
+    height: 50px;
+}
+.header-left .primary-button a{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+header>.flex{
+    justify-content: space-between;
+}
+
+
+/* for companies section */
+.companies-section .container{
+    margin-top: 50px;
+    padding-top: 30px;
+    /* border: 2px solid red; */
+}
+.container>.box1-com{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.com-logo-img{
+    width: 100px;
+}
+
+#all-com-div .flex{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#all-com-div img{
+    width: 100px;
+}
+
+/* for first big features section */
+.featbox1 .container{
+    background-image: url(asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: 47% 0%;
+    background-size: 60%;
+    /* border: 2px solid red; */
+    margin-top:140px;
+    margin-bottom: 20px;
+    height: 730px;
+}
+.top-portion{
+    text-align: center;
+    padding-top: 50px;
+}
+.top-portion .secondary-button{
+    width: 180px;
+}
+.top-portion .secondary-button{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.top-portion .secondary-button:hover{
+    color:var(--accent-color);
+}
+.bottom-portion{
+    margin-top: 40px;
+    /* border: 2px solid blue; */
+}
+.bottom-portion .flex{
+    justify-content: space-around;
+}
+.twohalf{
+    width: 100%;
+    
+    margin: 30px 0;
+    /* border: 2px solid black; */
+}
+.nestbox{
+    width: 30%;
+    /* border: 2px dashed black; */
+    text-align: center;
+}
+.nestbox img{
+    width: 40px;
+}
+.nestbox p{
+    margin: 8px 0;
+}
+.nestbox button{
+    width: 160px;
+}
+.nestbox button img{
+    width: 12px;
+}
+.nestbox button a{
+    font-size: 16px;
+    font-weight: 500;
+}
+.nestbox button:hover{
+    color: var(--accent-color);
+}
+
+
+/* ladki aur ceo wala section */
+
+.inner-box{
+    /* border: 2px solid yellow; */
+    padding-left:30px;
+}
+.common .flex{
+    justify-content: space-between;
+}
+.common img{
+    width: 480px;
+}
+.inner-box{
+    flex-basis: 550px;
+}
+.common > p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px;
+}
+.common > h2{
+    font-weight: 500;
+}
+#b1,#b2{
+    margin: 25px 0;
+}
+.ceo #b2{
+    background-image: url(asset\ 35.svg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+.ceo #b2 h5{
+    font-weight: 600;
+}
+#b2 p{
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    margin-top:20px;
+    width: 75%;
+}
+#b2 .flex{
+    justify-content: flex-start;
+}
+
+.vp{
+    margin-top: 80px;
+}
+#eco-group{
+    background-color: red;
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 3.5px;
+    text-align: center;
+    color: white;
+    width: 110px;
+    height: 25px;
+}
+
+.dm{
+    margin-top: 70px;
+}
+
+/* for examples section */
+.examples-section .top-portion h2{
+    font-size: 2.4rem;
+    font-weight: 540;
+}
+.top-portion{
+    margin-bottom: 25px;
+}
+.examples-section .secondary-button{
+    margin-top: 16px;
+    width: 200px;
+}
+.examples-section .flex{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.examples-card{
+    width: 24%;
+    /* background: black; */
+    position: relative;
+    height: 333px;
+    
+}
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+    
+.grow:hover { 
+    transform: scale(1.1); 
+}
+.card-text{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+}
+#card1{
+    background: linear-gradient(rgba(221, 218, 218, 0.299),rgb(44, 44, 44)),url(asset\ 36.jpeg);
+    background-size: cover;
+}
+#card2{
+    background: linear-gradient(rgba(221, 218, 218, 0.299),rgb(44, 44, 44)),url(asset\ 37.jpeg);
+    background-size: cover;
+}
+#card3{
+    background: url(asset\ 38.jpeg);
+    background-size: cover;
+}
+#card4{
+    background: linear-gradient(rgba(221, 218, 218, 0.299),rgb(44, 44, 44)),url(asset\ 39.jpeg);
+    background-size: cover;
+}
+
+/* for cta section */
+.cta-section{
+    background-color: #183b54;
+    margin-top: 80px;
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+.cta-section-container{
+    flex-direction: column;
+}
+.cta-section-container p{
+    color: rgb(220, 215, 215);
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.cta-section-container .primary-button{
+    width: 160px;
+    text-align: center;
+    padding-top: 13px;
+    height: 50px;
+    color: white;
+}
+
+/* for footer section */
+footer{
+    background-color: #ebf2fa;
+    padding-bottom: 70px;
+    
+}
+footer h4{
+    font-size: 1.2rem;
+}
+footer .flex{
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer-box{
+    width: 22%;
+    margin-top: 70px;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+footer li{
+    margin: 10px 0;
+}
+footer li a{
+    color:#577592;
+    font-size: 1rem;
+}
+
+/* for subfooter */
+.subfooter{
+    background-color: #b9cde4;
+    padding: 20px;
+}
+.subfooter .flex{
+    justify-content: space-evenly;
+}
+.subfooter a{
+    color: black;
+    font-size: 0.95rem;
+}
+.subfooter a:hover{
+    color: var(--accent-color);
+}

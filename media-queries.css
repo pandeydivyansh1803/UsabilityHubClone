@@ -1,0 +1,109 @@
+@media screen and (max-width:991px) {
+    h3{
+        font-size:1.2rem;
+    }
+    nav li{
+        display: none;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .examples-card{
+        width: 49%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .cta-section{
+        padding-top: 60px;
+    }
+    .com-logo-img{
+        width: 180px;
+        gap: 20px;
+    }
+    .header-left{
+        max-width: 40vw;
+    }
+    #header-img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px){
+    #flex1{
+        flex-direction: column-reverse;
+    }
+    #flex1 .primary-button{
+        width: 100%;
+    }
+    .header-left{
+        max-width: 80vw;
+        text-align: center;
+        margin-top: 20px;
+        flex-basis: 250px;
+    }
+    .nestbox{
+        width: 49%;
+    }
+    .bottom-portion .flex{
+        flex-wrap: wrap;
+    }
+    .featbox1 .container{
+        height: 1000px;
+    }
+    .common>.flex{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    .dm>.flex{
+        flex-direction: column-reverse;
+    }
+    .inner-box{
+        flex-basis: 400px;
+    }
+    .common .container{
+        padding-top: 0px;
+    }
+    .examples-section .secondary-button{
+        width: 65%;
+    }
+    footer .flex{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-box{
+        text-align: center;
+    }
+    .subfooter > .flex{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media  screen and (max-width: 479px){
+    .examples-area{
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-basis: 100%;
+    }
+    .featbox1 .container{
+        height: 2200px;
+    }
+    .twohalf{
+        flex-direction: column;
+    }
+    .nestbox{
+        margin-bottom: 30px;
+    }
+    .msgimg{
+        width: 40px !important;
+    }
+    .common img{
+        width: 290px;
+    }
+}
